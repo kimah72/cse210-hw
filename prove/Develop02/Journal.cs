@@ -3,7 +3,7 @@ using System.IO;
 public class Journal
 {
     public List<Entry> _entries = new List<Entry>();
-    public Random Random = new Random();
+    public Random _random = new Random();
     public string[] _prompts = 
     {
         "Describe something you learned today.",
@@ -18,7 +18,7 @@ public class Journal
     public void WriteEntry()
     {
         Entry entry = new Entry();
-        string randomPrompt = _prompts[Random.Next(_prompts.Length)];
+        string randomPrompt = _prompts[_random.Next(_prompts.Length)];
         Console.WriteLine("Use this : " + randomPrompt);
         entry._prompt = randomPrompt;
         Console.Write("Your Entry: ");

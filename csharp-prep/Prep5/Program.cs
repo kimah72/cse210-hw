@@ -5,19 +5,17 @@ class Program
 {
     static void Main(string[] args)
     {
+        // setting the variables in the Main for the rest of the functions to be used
         DisplayWelcomeMessage();
-
         string userName = PromptUserName();
         int userNumber = PromptUserNumber();
-
-        int squaredNumber = SquareNumber(userNumber);
-
-        DisplayResult(userName,squaredNumber);
+        int squaredNumber = SquaredNumber(userNumber);
+        DisplayResult(userName, squaredNumber);
     }
 
     static void DisplayWelcomeMessage()
     {
-        Console.WriteLine("Welcome to the Program!");
+        Console.WriteLine("Welcome to the program!");
     }
 
     static string PromptUserName()
@@ -35,8 +33,7 @@ class Program
 
         return number;
     }
-
-    static int SquareNumber(int number)
+    static int SquaredNumber(int number)
     {
         int square = number * number;
         return square;

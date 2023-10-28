@@ -15,7 +15,6 @@ class Program
 
         scripture.GetReference().DisplayReference();
         scripture.GetRenderedText();
-        Console.WriteLine("\n");
         Console.WriteLine("\nHit enter to hide words or type 'quit' to end the program.");
 
         string response = string.Empty;
@@ -29,22 +28,14 @@ class Program
 
             if (string.IsNullOrWhiteSpace(response))
             {
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < 3 && !scripture.CompletelyHidden(); i++)
                 {
-                    if (scripture.CompletelyHidden())
-                        break;
-
                     scripture.HideRandomWord();
                 }
 
                 Console.Clear();
                 scripture.GetReference().DisplayReference();
                 scripture.GetRenderedText();
-
-                if (scripture.CompletelyHidden())
-                {
-                    response = "quit";
-                }
             }
         }
     }

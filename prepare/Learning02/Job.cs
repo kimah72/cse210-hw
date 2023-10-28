@@ -1,7 +1,9 @@
 using System;
 
+// Create the class
 public class Job
 {
+    // Create member variable in the class for each element that this class should contain.
     public string _jobTitle;
     public string _company;
     public int _startYear;

@@ -11,7 +11,6 @@ public class EternalGoal : Goal
     public override void RecordEvent()
     {
         AddPoints(_eventPoints);
-        SetCompleted();
     }
 
     public override bool IsComplete()

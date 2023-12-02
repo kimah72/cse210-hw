@@ -24,22 +24,25 @@ class Program
             },
             new Video
             {
-                _title = "Remembering the Life of President M. Russell Ballard",
-                _author = "Church Newsroom",
-                _lengthInSeconds = 370
+                _title = "Stand Forever | Lawrence E. Corbridge | 2019",
+                _author = "BYU Speeches",
+                _lengthInSeconds = 1620
             }
         };
 
         // Add comments to each video
-        _videos[0].AddComment("@loribickle5252", "I cherish this album and play it every Christmas since it was released. It fills my heart.");
-        _videos[0].AddComment("@jamiejackson3903", "Truly one of the great modern holiday songs. This track matches the inherent beauty of some of the great and classic Christmas carols. Thank you for this amazing gift, Mr. Denver.");
+        _videos[0].AddComment("@loribickle5252", "11 months ago", "I cherish this album and play it every Christmas since it was released. It fills my heart.");
+        _videos[0].AddComment("@neilreynolds6899", "3 year ago", "This entire album is Priceless!! Beautiful.");
+        _videos[0].AddComment("@kevinwiley9696", "3 months ago", "LOVE, LOVE, LOVE this album!!!!!");
 
-        _videos[1].AddComment("@Mori", "Hopefully Netflix nails it this time. I believe they will.");
-        _videos[1].AddComment("@vantoannguyen7730", "I used to dream for the cinematic version while watching whole series for many times so many years ago. It's incredible!");
+        _videos[1].AddComment("@Mori", "3 weeks ago", "Hopefully Netflix nails it this time. I believe they will.");
+        _videos[1].AddComment("@vangel0sgarg0yle", "1 day ago", "This actually looks promising! Hopefully the redemption arc begins. T^T");
+        _videos[1].AddComment("@HelloFutureMe", "3 weeks ago", "The redemption arc hopefully begins.");
 
-        _videos[2].AddComment("@edwardhegemann5951", "President Ballard did so much good behind the scenes that most people will never know about. He ministered to my father who isn’t a member of the church. He wrote him a kind letter. I’ll forever be grateful for his Christ-like love and service.");
-        _videos[2].AddComment("@ScamwatchDallin", "I was in the missionary choir in October 2022's general conference. It was a landmark moment for me when he thanked us for singing Faith in Every Footstep. I'll miss him dearly, but glad he won't have to miss his dear wife anymore.");
-        _videos[2].AddComment("@linksmusic2060", "Thank you President Ballard, for everything!!!");
+        _videos[2].AddComment("@clownymcgiggles6757", "11 months ago", "Every member needs to hear this talk.");
+        _videos[2].AddComment("@JuanSuttonUtah", "3 years ago", "This has to be one of the top ten talks of all time. Why anyone would thumbs down this is beyond me.");
+        _videos[2].AddComment("@wallaceladmers3521", "1 year ago", "Best talk ever. May we all fill that gap between our beliefs and the truth.");
+        _videos[2].AddComment("@lloydlee2176", "4 years ago", "This is one of the most beautiful talks I’ve ever heard. Thank you.");
 
         // Display information about each video
         foreach (Video video in _videos)

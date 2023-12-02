@@ -7,9 +7,9 @@ class Video
     private List<Comment> _comments = new List<Comment>();
 
     // Method to add a comment to the video
-    public void AddComment(string commenterName, string commentText)
+    public void AddComment(string commenterName, string commentTimeStamp, string commentText)
     {
-        _comments.Add(new Comment { _commenterName = commenterName, _commentText = commentText });
+        _comments.Add(new Comment { _commenterName = commenterName, _commentTimeStamp = commentTimeStamp, _commentText = commentText });
     }
 
     // Method to get the number of comments for the video
@@ -30,7 +30,7 @@ class Video
         Console.WriteLine();
         foreach (var comment in _comments)
         {
-            Console.WriteLine($"  {comment._commenterName}: {comment._commentText}");
+            Console.WriteLine($"User:{comment._commenterName} - {comment._commentTimeStamp} - {comment._commentText}");
             Console.WriteLine();
         }
         Console.WriteLine(); // Add a newline for better readability

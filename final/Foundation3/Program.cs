@@ -5,7 +5,7 @@ class Program
     {
         Console.Clear();
         // Create Addresses
-        Address address1 = new Address("123 Main St", "Sprinville", "MO", "USA");
+        Address address1 = new Address("123 Main St", "Springville", "MO", "USA");
         Address address2 = new Address("456 Oak St", "Montreal", "Quebec", "Canada");
 
         // Create Events
@@ -20,10 +20,10 @@ class Program
         Console.WriteLine();
         Console.WriteLine("Reception Event - Standard Details:\n" + receptionEvent.GenerateStandardDetails() + "\n");
         Console.WriteLine("Reception Event - Full Details:\n" + receptionEvent.GenerateFullDetails() + "\n");
-        Console.WriteLine("Reception Event - Short Descripotion:\n" + receptionEvent.GenerateShortDescription());
+        Console.WriteLine("Reception Event - Short Description:\n" + receptionEvent.GenerateShortDescription());
         Console.WriteLine();
         Console.WriteLine("Outdoor Gathering Event - Standard Details:\n" + outdoorEvent.GenerateStandardDetails() + "\n");
         Console.WriteLine("Outdoor Gathering Event - Full Details:\n" + outdoorEvent.GenerateFullDetails() + "\n");
-        Console.WriteLine("Outdoor Gathering Event - Short Descripotion:\n" + outdoorEvent.GenerateShortDescription());
+        Console.WriteLine("Outdoor Gathering Event - Short Description:\n" + outdoorEvent.GenerateShortDescription());
     }
 }

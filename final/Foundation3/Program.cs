@@ -22,8 +22,6 @@ class Program
         Console.WriteLine("Reception Event - Full Details:\n" + receptionEvent.GenerateFullDetails() + "\n");
         Console.WriteLine("Reception Event - Short Descripotion:\n" + receptionEvent.GenerateShortDescription());
         Console.WriteLine();
-        Console.WriteLine($"Test: {address1.GetFullAddress()}");
-        Console.WriteLine();
         Console.WriteLine("Outdoor Gathering Event - Standard Details:\n" + outdoorEvent.GenerateStandardDetails() + "\n");
         Console.WriteLine("Outdoor Gathering Event - Full Details:\n" + outdoorEvent.GenerateFullDetails() + "\n");
         Console.WriteLine("Outdoor Gathering Event - Short Descripotion:\n" + outdoorEvent.GenerateShortDescription());

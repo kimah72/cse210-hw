@@ -16,7 +16,7 @@ class Event
     }
     public virtual string GenerateStandardDetails()
     {
-        return $"Event: {_title},\nDescription: {_description}\nDate: {_date.ToShortDateString()}\nTime: {_time}\nAddress: {_address.GetFullAddress()}";
+        return $"Event: {_title}\nDescription: {_description}\nDate: {_date.ToShortDateString()}\nTime: {_time}\nAddress: {_address.GetFullAddress()}";
     }
 
     public virtual string GenerateFullDetails()
